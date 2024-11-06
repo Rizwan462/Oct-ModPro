@@ -1,0 +1,127 @@
+/* General Page Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    background-color: black;
+    padding: 20px;
+    color: whitesmoke;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Input and Button Styling */
+input[type="text"] {
+    width: 50%;
+    height: 50px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 25px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: black;
+    color: #fff;
+    border: 1px solid white;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #2563eb;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    
+}
+
+thead {
+    background-color: #3b82f6;
+    color: #fff;
+}
+
+thead th {
+    padding: 15px;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: left;
+    
+}
+
+tbody tr {
+    transition: background-color 0.2s;
+    
+}
+
+tbody tr:hover {
+    background-color: #f1f5f9;
+}
+
+tbody td {
+    padding: 12px 15px;
+    font-size: 16px;
+    border-bottom: 1px solid #e5e7eb;
+    color: white;
+}
+
+/* Specific Column Styling */
+td img {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+
+td.symbol {
+    font-weight: 500;
+    color: white;
+}
+
+td.price {
+    font-weight: 600;
+    color: white;
+}
+
+td.volume {
+    color: white;
+    font-weight: 500;
+}
+
+/* Percentage Change Styling */
+td.percentage {
+    font-weight: 600;
+    text-align: center;
+}
+
+td.percentage.gain {
+    color: #10b981; /* Green for gains */
+}
+
+td.percentage.loss {
+    color: #ef4444; /* Red for losses */
+}
